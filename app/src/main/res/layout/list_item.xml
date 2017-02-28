@@ -15,7 +15,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/default_text_view"
+        android:id="@+id/english_text_view"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         tools:text="one">
