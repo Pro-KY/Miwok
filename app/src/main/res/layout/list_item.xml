@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/list_item_padding">
+
+    <TextView
+        android:id="@+id/miwok_text_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:text="lutti">
+    </TextView>
+
+    <TextView
+        android:id="@+id/default_text_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:text="one">
+    </TextView>
+</LinearLayout>

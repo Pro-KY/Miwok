@@ -17,10 +17,14 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import static android.R.layout.simple_list_item_1;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -42,17 +46,15 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("nine");
         words.add("ten");
 
-        // Find the root view so we can add child views to it
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.root_view);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(
+                this,
+                R.layout.list_item,
+                words
+        );
 
-        // create TextViews as many as words in the array words
-        // set each value from arrayList to each created TextView and display on the screen
-        for(int i=0; i<words.size(); i++) {
-            TextView wordView = new TextView(this);
-            wordView.setText(words.get(i));
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(itemsAdapter);
 
-            rootView.addView(wordView);
-        }
 
     }
 }
