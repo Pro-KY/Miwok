@@ -2,6 +2,7 @@ package com.example.android.miwok;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,9 +60,13 @@ public class WordAdapter  extends ArrayAdapter<Word> {
         TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
         englishTextView.setText(currentWord.getMiwokTranslation());
 
-        // Find the ImageView in the list_item.xml layout with the ID image
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
-        imageView.setImageResource(currentWord.getImageResourceId());
+        // if getImageResourceId() returns 0, it means that there is no image, so we don't
+        // need to set image to the ImageView, otherwise set an image 
+        if(currentWord.getImageResourceId() != 0) {
+            // Find the ImageView in the list_item.xml layout with the ID image
+            ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+            imageView.setImageResource(currentWord.getImageResourceId());
+        }
 
         return listItemView;
     }
