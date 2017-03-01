@@ -2,22 +2,38 @@
 <!-- Layout for a single list item -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/list_item_padding">
 
-    <TextView
-        android:id="@+id/miwok_text_view"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        tools:text="lutti">
-    </TextView>
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="image">
+    </ImageView>
 
-    <TextView
-        android:id="@+id/english_text_view"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        tools:text="one">
-    </TextView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:text="lutti">
+        </TextView>
+
+        <TextView
+            android:id="@+id/english_text_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:text="one">
+        </TextView>
+    </LinearLayout>
 </LinearLayout>
