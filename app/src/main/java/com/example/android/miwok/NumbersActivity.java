@@ -17,6 +17,7 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -44,7 +45,8 @@ public class NumbersActivity extends AppCompatActivity {
 
         WordAdapter adapter = new WordAdapter(
                 this,
-                words
+                words,
+                R.color.category_numbers
         );
 
         ListView listView = (ListView) findViewById(R.id.list);

@@ -31,7 +31,7 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create an arrayList of words
         ArrayList<Word> words = new ArrayList<>();
 
-        words.add(new Word("Where are you going?", "minto wuksus")) ;
+        words.add(new Word("Where are you going?", "minto wuksus"));
         words.add(new Word("What is your name?", "tinnә oyaase'nә"));
         words.add(new Word("My name is...", "oyaaset..."));
         words.add(new Word("How are you feeling?", "michәksәs?"));
@@ -44,7 +44,8 @@ public class PhrasesActivity extends AppCompatActivity {
 
         WordAdapter adapter = new WordAdapter(
                 this,
-                words
+                words,
+                R.color.category_phrases
         );
 
         ListView listView = (ListView) findViewById(R.id.list);

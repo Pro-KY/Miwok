@@ -45,5 +45,4 @@
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases" />
-
 </LinearLayout>
