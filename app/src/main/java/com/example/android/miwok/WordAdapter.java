@@ -53,7 +53,7 @@ public class WordAdapter  extends ArrayAdapter<Word> {
             );
         }
 
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer = listItemView.findViewById(R.id.text_container_wrapper);
 
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mlistItemColorId);

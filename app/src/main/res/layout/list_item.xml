@@ -16,32 +16,50 @@
     </ImageView>
 
     <LinearLayout
-        android:id="@+id/text_container"
+        android:id="@+id/text_container_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
+        android:orientation="horizontal"
         android:layout_gravity="center_vertical">
 
-        <TextView
-            android:id="@+id/miwok_text_view"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
-        </TextView>
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2">
 
-        <TextView
-            android:id="@+id/english_text_view"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textColor="@android:color/white"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
-        </TextView>
+            <TextView
+                android:id="@+id/miwok_text_view"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
+            </TextView>
+
+            <TextView
+                android:id="@+id/english_text_view"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textColor="@android:color/white"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_arrow"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"/>
     </LinearLayout>
 </LinearLayout>
