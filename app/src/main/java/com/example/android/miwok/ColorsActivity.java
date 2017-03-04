@@ -78,6 +78,12 @@ public class ColorsActivity extends AppCompatActivity implements MediaPlayer.OnC
         });
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+    }
+
     // Clean up the media player by releasing its resources.
     private void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
