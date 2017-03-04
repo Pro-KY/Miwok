@@ -12,7 +12,10 @@ public class Word {
     private String mMiwokTranslation;
 
     // Corresponding image to the word
-    private int mImageId;
+    private int mImageResourceId;
+
+    // Corresponding audio file to the word
+    private int mAudioResourceId;
 
 
     // default constructor, creates a new Word object.
@@ -21,10 +24,11 @@ public class Word {
         mMiwokTranslation = miwokTranslation;
     }
 
-    public Word(String englishTranslation, String miwokTranslation, int imageId) {
+    public Word(String englishTranslation, String miwokTranslation, int imageId, int audioFileId) {
         mEnglishTranslation = englishTranslation;
         mMiwokTranslation = miwokTranslation;
-        mImageId = imageId;
+        mImageResourceId = imageId;
+        mAudioResourceId = audioFileId;
     }
 
 
@@ -37,6 +41,12 @@ public class Word {
     }
 
     public int getImageResourceId() {
-        return mImageId;
+        return mImageResourceId;
     }
+
+    public int getAudioResourceId() {
+        return mAudioResourceId;
+    }
+
+
 }
