@@ -19,9 +19,10 @@ public class Word {
 
 
     // default constructor, creates a new Word object.
-    public Word(String englishTranslation, String miwokTranslation) {
+    public Word(String englishTranslation, String miwokTranslation, int audioFileId) {
         mEnglishTranslation = englishTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioFileId;
     }
 
     public Word(String englishTranslation, String miwokTranslation, int imageId, int audioFileId) {
