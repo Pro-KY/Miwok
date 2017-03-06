@@ -24,11 +24,11 @@ import static android.R.attr.resource;
 
 public class WordAdapter  extends ArrayAdapter<Word> {
 
-    private int mlistItemColorId;
+    private int mListItemColorId;
 
     public WordAdapter(Context context, ArrayList<Word> words, int color) {
         super(context, 0, words);
-        mlistItemColorId = color;
+        mListItemColorId = color;
     }
 
     /**
@@ -58,7 +58,7 @@ public class WordAdapter  extends ArrayAdapter<Word> {
         View textContainer = listItemView.findViewById(R.id.text_container_wrapper);
 
         // Find the color that the resource ID maps to
-        int color = ContextCompat.getColor(getContext(), mlistItemColorId);
+        int color = ContextCompat.getColor(getContext(), mListItemColorId);
         textContainer.setBackgroundColor(color);
 
         // Get the object located at this position in the list
