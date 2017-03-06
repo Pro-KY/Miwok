@@ -66,13 +66,11 @@ public class WordAdapter  extends ArrayAdapter<Word> {
 
         // Find the TextView in the list_item.xml layout with the ID miwok_text_view
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        miwokTextView.setText(currentWord.getEnglishTranslation());
-        Log.d("englishText", currentWord.getEnglishTranslation());
+        miwokTextView.setText(currentWord.getMiwokTranslationResource());
 
         // Find the TextView in the list_item.xml layout with the ID english_text_view
         TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
-        englishTextView.setText(currentWord.getMiwokTranslation());
-        Log.d("miwokTranslation", currentWord.getMiwokTranslation());
+        englishTextView.setText(currentWord.getEnglishTranslationResource());
 
         // if getImageResourceId() returns 0, it means that there is no image, so we don't
         // need to set image to the ImageView, otherwise set an image to the ImageView

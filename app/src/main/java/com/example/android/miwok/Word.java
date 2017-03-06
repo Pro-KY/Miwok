@@ -6,10 +6,10 @@ package com.example.android.miwok;
 
 public class Word {
     // English translation for the word
-    private String mEnglishTranslation;
+    private int mEnglishTranslation;
 
     // Miwok translation for the word
-    private String mMiwokTranslation;
+    private int mMiwokTranslation;
 
     // Corresponding image to the word
     private int mImageResourceId;
@@ -19,13 +19,13 @@ public class Word {
 
 
     // default constructor, creates a new Word object.
-    public Word(String englishTranslation, String miwokTranslation, int audioFileId) {
+    public Word(int englishTranslation, int miwokTranslation, int audioFileId) {
         mEnglishTranslation = englishTranslation;
         mMiwokTranslation = miwokTranslation;
         mAudioResourceId = audioFileId;
     }
 
-    public Word(String englishTranslation, String miwokTranslation, int imageId, int audioFileId) {
+    public Word(int englishTranslation, int miwokTranslation, int imageId, int audioFileId) {
         mEnglishTranslation = englishTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageId;
@@ -33,11 +33,11 @@ public class Word {
     }
 
 
-    public String getEnglishTranslation() {
+    public int getEnglishTranslationResource() {
         return mEnglishTranslation;
     }
 
-    public String getMiwokTranslation() {
+    public int getMiwokTranslationResource() {
         return mMiwokTranslation;
     }
 
