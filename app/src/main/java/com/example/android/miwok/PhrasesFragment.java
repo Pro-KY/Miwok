@@ -4,7 +4,6 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,9 +14,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class PhrasesFragment extends Fragment {
-
-    public static final String ARG_PAGE = "ARG_PAGE";
-    private int mPage;
 
     // Handles playback of all the sound files
     private MediaPlayer mMediaPlayer;

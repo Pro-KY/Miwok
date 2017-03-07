@@ -15,10 +15,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class ColorsFragment extends Fragment {
-
-    public static final String ARG_PAGE = "ARG_PAGE";
-    private int mPage;
-
     // Handles playback of all the sound files
     private MediaPlayer mMediaPlayer;
     private ArrayList<Word> words;
