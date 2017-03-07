@@ -18,6 +18,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <!-- Style for a category of vocabulary words -->
@@ -36,4 +37,12 @@
         <item name="android:layout_width">@dimen/image_list_item_width</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
     </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor"> @color/tab_indicator </item>
+        <item name="tabBackground"> @color/primary_color </item>
+        <item name="tabSelectedTextColor"> @color/tab_indicator </item>
+    </style>
+
+
 </resources>
